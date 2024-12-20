@@ -1,0 +1,12 @@
+== making a file system with debugfs
+<1> $ <1> $ 
+== using debugfs to stat the root inode
+<1> $ ino: 1
+gen: 1
+nlink: 1
+mode: 755
+atime: 
+ctime: 
+mtime: 
+crtime: 
+<1> $ 
