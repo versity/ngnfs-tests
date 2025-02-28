@@ -1,3 +1,0 @@
-== testing that mapd server starts in foreground mode
-== cleanup
-accept error: Invalid argument (errno 22)

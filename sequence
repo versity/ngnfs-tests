@@ -1,4 +1,3 @@
-mapd_foreground.sh
 DO_SETUP
 mount_unmount.sh
 debugfs_mkfs.sh

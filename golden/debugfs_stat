@@ -1,12 +1,10 @@
-== making a file system with debugfs
-<1> $ <1> $ 
-== using debugfs to stat the root inode
-<1> $ ino: 1
+== making a file system and stat-ing root inode with debugfs
+<1> $ <1> $ ino: [REDACTED]
 gen: 1
-nlink: 1
-mode: 755
-atime: 
-ctime: 
-mtime: 
-crtime: 
+nlink: 2
+mode: 40755
+atime: [REDACTED]
+ctime: [REDACTED]
+mtime: [REDACTED]
+crtime: [REDACTED]
 <1> $ 

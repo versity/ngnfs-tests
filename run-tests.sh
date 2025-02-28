@@ -89,13 +89,13 @@ done
 # set some T_ defaults
 T_TRACE_DUMP="0"
 T_TRACE_PRINTK="0"
-T_NR_MAPDS=1
+#T_NR_MAPDS=1
 
 # the port number is the start port - each additional server adds one to it
 T_DEVD_HOST="127.0.0.1"
 T_DEVD_PORT="8100"
-T_MAPD_HOST="127.0.0.1"
-T_MAPD_PORT="8200"
+#T_MAPD_HOST="127.0.0.1"
+#T_MAPD_PORT="8200"
 
 # array declarations to be able to use array ops
 declare -a T_DEVICES
@@ -134,11 +134,11 @@ while true; do
 	-m)
 		T_MKFS="1"
 		;;
-	-M)
-		test -n "$2" || die "-M must have nr mounts argument"
-		T_NR_MAPDS="$2"
-		shift
-		;;
+	# -M)
+	# 	test -n "$2" || die "-M must have nr mounts argument"
+	# 	T_NR_MAPDS="$2"
+	# 	shift
+	# 	;;
 	# -n)
 	# 	test -n "$2" || die "-n must have nr mounts argument"
 	# 	T_NR_MOUNTS="$2"
@@ -251,7 +251,7 @@ if [ -n "$T_NGNFS_PROGS" ]; then
 
 	# we can now run the built ngnfs-progs binaries, prefer over installed
 	# TODO: should do this some other way than listing the individual dirs?
-	for dir in cli devd mapd; do
+	for dir in cli devd; do
 		PATH="$T_NGNFS_PROGS/$dir:$PATH"
 	done
 fi
@@ -333,39 +333,38 @@ start_devd() {
 	port="$T_DEVD_PORT"
 	for d in "${T_DEVICES[@]}"; do
 		addr="$T_DEVD_HOST:$port"
-		cmd ngnfs-devd -d "$d" -l "$addr" -t "$T_RESULTS/devd/trace-$port"
-		# collect command line options for mapd server
+		cmd ngnfs-devd -d "$d" -l "$addr" -t "$T_RESULTS/devd/trace-$port" &
 		T_DEVD_ADDRS="$T_DEVD_ADDRS -d $addr"
 		((port++))
 	done
 }
 
-stop_mapd() {
-	msg "stopping all mapd servers on port $T_MAPD_PORT and above"
-	stop_port ngnfs-mapd $T_MAPD_HOST $T_MAPD_PORT
-}
+# stop_mapd() {
+# 	msg "stopping all mapd servers on port $T_MAPD_PORT and above"
+# 	stop_port ngnfs-mapd $T_MAPD_HOST $T_MAPD_PORT
+# }
 
-start_mapd() {
-	msg "starting $T_NR_MAPDS mapd servers"
-	cmd mkdir -p "$T_RESULTS/mapd/"
-	port="$T_MAPD_PORT"
-	for i in $(seq 0 $((T_NR_MAPDS - 1))); do
-		addr="$T_MAPD_HOST:$port"
-		mkdir -p "$T_RESULTS/mapd-storage-$port"
-		# XXX put the output somewhere
-		cmd ngnfs-mapd $T_DEVD_ADDRS -l "$addr" -t "$T_RESULTS/mapd/trace-$port" -s "$T_RESULTS/mapd/storage-$port"
-		# collect command line options for ngnfs client
-		T_MAPD_ADDRS="$T_MAPD_ADDRS -a $addr"
-		((port++))
-	done
-}
+# start_mapd() {
+# 	msg "starting $T_NR_MAPDS mapd servers"
+# 	cmd mkdir -p "$T_RESULTS/mapd/"
+# 	port="$T_MAPD_PORT"
+# 	for i in $(seq 0 $((T_NR_MAPDS - 1))); do
+# 		addr="$T_MAPD_HOST:$port"
+# 		mkdir -p "$T_RESULTS/mapd-storage-$port"
+# 		# XXX put the output somewhere
+# 		cmd ngnfs-mapd $T_DEVD_ADDRS -l "$addr" -t "$T_RESULTS/mapd/trace-$port" -s "$T_RESULTS/mapd/storage-$port"
+# 		# collect command line options for ngnfs client
+# 		T_MAPD_ADDRS="$T_MAPD_ADDRS -a $addr"
+# 		((port++))
+# 	done
+# }
 
 # TODO: have un_mkfs so the mkfs tests actually test making an fs
 
 do_mkfs() {
 	if [ -n "$T_MKFS" ]; then
 		msg "making new file system"
-		cmd echo -e "mkfs\nquit\n" | ngnfs-cli debugfs ${T_MAPD_ADDRS}
+		cmd echo -e "mkfs\nquit\n" | ngnfs-cli debugfs ${T_DEVD_ADDRS}
 	fi
 }
 
@@ -384,15 +383,17 @@ mount_all() {
 do_shutdown() {
 	unmount_all
 	# TODO: un_mkfs
-	stop_mapd
+	# stop_mapd
 	stop_devd
 }
 
 do_setup() {
 	start_devd
-	start_mapd
+	# start_mapd
 	do_mkfs
 	mount_all
+	# tell ngnfs clients what addresses to connect to
+	T_CLIENT_ADDRS="$T_DEVD_ADDRS"
 }
 
 # Shutdown any existing ngnfs servers and unmount if requested
