@@ -1,0 +1,10 @@
+== creating a file with debugfs
+<1> $ <1> $ <1> $ ino: [REDACTED]
+gen: 1
+nlink: 1
+mode: 100644
+atime: [REDACTED]
+ctime: [REDACTED]
+mtime: [REDACTED]
+crtime: [REDACTED]
+<1> $ 
