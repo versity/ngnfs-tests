@@ -9,3 +9,5 @@ debugfs_mkdir.sh
 debugfs_cd.sh
 debugfs_lookup.sh
 debugfs_lookup_dots.sh
+debugfs_unlink.sh
+debugfs_rmdir.sh
