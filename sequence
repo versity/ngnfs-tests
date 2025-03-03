@@ -2,3 +2,4 @@ DO_SETUP
 mount_unmount.sh
 debugfs_mkfs.sh
 debugfs_stat.sh
+debugfs_stat_nonexistent.sh
