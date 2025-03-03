@@ -1,0 +1,13 @@
+== looking up files and directories with debugfs
+<1> $ <1> $ lookup: file does not exist
+<1> $ <1> $ name: file
+name_len: 4
+dtype: 10
+ino: [REDACTED]
+gen: 1
+<1> $ <1> $ name: dir
+name_len: 3
+dtype: 4
+ino: [REDACTED]
+gen: 1
+<1> $ 

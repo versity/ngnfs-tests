@@ -7,3 +7,5 @@ debugfs_create.sh
 debugfs_create_existing.sh
 debugfs_mkdir.sh
 debugfs_cd.sh
+debugfs_lookup.sh
+debugfs_lookup_dots.sh
