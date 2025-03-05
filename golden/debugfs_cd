@@ -1,9 +1,11 @@
 == changing directories with debugfs
-<1> $ <1> $ get_handle: dir does not exist
+<1> $ <1> $ lookup: dir does not exist
 <1> $ <1> $ ino: [REDACTED]
 gen: 1
 nlink: 2
 mode: 40755
+parent ino: [REDACTED]
+parent gen: 1
 atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]

@@ -3,6 +3,8 @@
 gen: 1
 nlink: 2
 mode: 40755
+parent ino: [REDACTED]
+parent gen: 1
 atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]

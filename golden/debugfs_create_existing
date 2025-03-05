@@ -3,6 +3,8 @@
 gen: 1
 nlink: 1
 mode: 100644
+parent ino: [REDACTED]
+parent gen: 0
 atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]
@@ -12,6 +14,8 @@ crtime: [REDACTED]
 gen: 1
 nlink: 1
 mode: 100644
+parent ino: [REDACTED]
+parent gen: 0
 atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]
