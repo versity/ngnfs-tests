@@ -12,3 +12,4 @@ debugfs_lookup_dots.sh
 debugfs_unlink.sh
 debugfs_rmdir.sh
 debugfs_readdir.sh
+debugfs_rename.sh
