@@ -1,0 +1,26 @@
+== attempting to create/mkdir . and ..
+<1> $ <1> $ create error: Is a directory (errno 21)
+<1> $ create error: Is a directory (errno 21)
+<1> $ mkdir: file exists
+<1> $ mkdir: file exists
+<1> $ ino: [REDACTED]
+gen: 1
+nlink: 2
+mode: 40755
+parent ino: [REDACTED]
+parent gen: 1
+atime: [REDACTED]
+ctime: [REDACTED]
+mtime: [REDACTED]
+crtime: [REDACTED]
+<1> $ ino: [REDACTED]
+gen: 1
+nlink: 2
+mode: 40755
+parent ino: [REDACTED]
+parent gen: 1
+atime: [REDACTED]
+ctime: [REDACTED]
+mtime: [REDACTED]
+crtime: [REDACTED]
+<1> $ 
