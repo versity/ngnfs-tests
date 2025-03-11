@@ -14,3 +14,4 @@ debugfs_unlink.sh
 debugfs_rmdir.sh
 debugfs_readdir.sh
 debugfs_rename.sh
+debugfs_replace_file_with_file.sh
