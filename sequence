@@ -18,3 +18,4 @@ debugfs_replace_file_with_file.sh
 debugfs_rename_dir.sh
 debugfs_replace_file_with_dir.sh
 debugfs_replace_dir_with_dir.sh
+debugfs_replace_dir_with_file.sh
