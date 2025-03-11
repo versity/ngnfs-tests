@@ -16,3 +16,4 @@ debugfs_readdir.sh
 debugfs_rename.sh
 debugfs_replace_file_with_file.sh
 debugfs_rename_dir.sh
+debugfs_replace_file_with_dir.sh

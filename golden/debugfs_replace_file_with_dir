@@ -1,0 +1,13 @@
+== renaming a directory over a file with debugfs
+<1> $ <1> $ <1> $ <1> $ <5> $ <5> $ <5> $ stat: target does not exist
+<5> $ <1> $ ino: [REDACTED]
+gen: 1
+nlink: 2
+mode: 40755
+parent ino: [REDACTED]
+parent gen: 1
+atime: [REDACTED]
+ctime: [REDACTED]
+mtime: [REDACTED]
+crtime: [REDACTED]
+<1> $ 
