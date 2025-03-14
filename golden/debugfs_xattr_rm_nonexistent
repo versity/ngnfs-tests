@@ -1,0 +1,4 @@
+== removing a nonexistent xattr with debugfs
+<1> $ <1> $ getxattr error: No data available (errno 61)
+<1> $ removexattr error: No data available (errno 61)
+<1> $ 

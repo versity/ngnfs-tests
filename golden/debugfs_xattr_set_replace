@@ -1,0 +1,6 @@
+== setting an xattr with replace flag with debugfs
+<1> $ <1> $ setxattr error: No data available (errno 61)
+<1> $ getxattr error: No data available (errno 61)
+<1> $ <1> $ value
+<1> $ <1> $ value2
+<1> $ 

@@ -1,0 +1,5 @@
+== setting an xattr with create flag with debugfs
+<1> $ <1> $ <1> $ value
+<1> $ setxattr error: File exists (errno 17)
+<1> $ value
+<1> $ 
