@@ -1,0 +1,3 @@
+== listing a nonexistent xattr with debugfs
+<1> $ <1> $ total xattrs: 0
+<1> $ 

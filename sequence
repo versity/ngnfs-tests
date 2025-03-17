@@ -28,3 +28,8 @@ debugfs_xattr_set_create.sh
 debugfs_xattr_set_replace.sh
 debugfs_xattr_rm_nonexistent.sh
 debugfs_xattr_remove.sh
+debugfs_xattr_list_nonexistent.sh
+debugfs_xattr_list.sh
+debugfs_xattr_list_bytes.sh
+debugfs_xattr_list_too_small.sh
+
