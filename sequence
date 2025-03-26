@@ -32,4 +32,13 @@ debugfs_xattr_list_nonexistent.sh
 debugfs_xattr_list.sh
 debugfs_xattr_list_bytes.sh
 debugfs_xattr_list_too_small.sh
+debugfs_read_empty.sh
+debugfs_write_first_block.sh
+debugfs_read_past_EOF.sh
+debugfs_write_indirect.sh
+debugfs_write_block_boundary.sh
+debugfs_write_double_indirect.sh
+debugfs_write_increasing.sh
+debugfs_write_decreasing.sh
+debugfs_write_mixed.sh
 
