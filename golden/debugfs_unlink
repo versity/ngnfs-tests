@@ -10,5 +10,6 @@ atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]
 crtime: [REDACTED]
+size: 0
 <1> $ <1> $ stat: file does not exist
 <1> $ 

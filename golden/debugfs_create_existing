@@ -9,6 +9,7 @@ atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]
 crtime: [REDACTED]
+size: 0
 <1> $ create error: File exists (errno 17)
 <1> $ ino: [REDACTED]
 gen: 1
@@ -20,4 +21,5 @@ atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]
 crtime: [REDACTED]
+size: 0
 <1> $ 

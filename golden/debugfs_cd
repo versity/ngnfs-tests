@@ -10,5 +10,6 @@ atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]
 crtime: [REDACTED]
+size: 0
 <1> $ <3> $ stat: dir does not exist
 <3> $ 
