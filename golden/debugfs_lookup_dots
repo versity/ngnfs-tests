@@ -1,20 +1,27 @@
 == looking up . and .. with debugfs
-<1> $ <1> $ name: .
+<1> $ 
+<1> $ 
+name: .
 name_len: 1
 dtype: 4
 ino: [REDACTED]
 gen: 1
-<1> $ name: ..
+<1> $ 
+name: ..
 name_len: 2
 dtype: 4
 ino: [REDACTED]
 gen: 1
-<1> $ <1> $ <3> $ name: .
+<1> $ 
+<1> $ 
+<3> $ 
+name: .
 name_len: 1
 dtype: 4
 ino: [REDACTED]
 gen: 1
-<3> $ name: ..
+<3> $ 
+name: ..
 name_len: 2
 dtype: 4
 ino: [REDACTED]

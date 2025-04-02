@@ -1,5 +1,8 @@
 == creating an existing file with debugfs
-<1> $ <1> $ <1> $ ino: [REDACTED]
+<1> $ 
+<1> $ 
+<1> $ 
+ino: [REDACTED]
 gen: 1
 nlink: 1
 mode: 100644
@@ -10,8 +13,10 @@ ctime: [REDACTED]
 mtime: [REDACTED]
 crtime: [REDACTED]
 size: 0
-<1> $ create error: File exists (errno 17)
-<1> $ ino: [REDACTED]
+<1> $ 
+create error: File exists (errno 17)
+<1> $ 
+ino: [REDACTED]
 gen: 1
 nlink: 1
 mode: 100644

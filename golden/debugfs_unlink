@@ -1,6 +1,10 @@
 == creating and unlinking a file with debugfs
-<1> $ <1> $ unlink: file does not exist
-<1> $ <1> $ ino: [REDACTED]
+<1> $ 
+<1> $ 
+unlink: file does not exist
+<1> $ 
+<1> $ 
+ino: [REDACTED]
 gen: 1
 nlink: 1
 mode: 100644
@@ -11,5 +15,7 @@ ctime: [REDACTED]
 mtime: [REDACTED]
 crtime: [REDACTED]
 size: 0
-<1> $ <1> $ stat: file does not exist
+<1> $ 
+<1> $ 
+stat: file does not exist
 <1> $ 

@@ -1,3 +1,7 @@
 == reading past the end of a non-empty file with debugfs
-<1> $ <1> $ <1> $ <1> $ read: EOF
+<1> $ 
+<1> $ 
+<1> $ 
+<1> $ 
+read: EOF
 <1> $ 

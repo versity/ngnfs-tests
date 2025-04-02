@@ -1,5 +1,10 @@
 == listing xattrs with debugfs
-<1> $ <1> $ <1> $ <1> $ <1> $ xattr: name
+<1> $ 
+<1> $ 
+<1> $ 
+<1> $ 
+<1> $ 
+xattr: name
 xattr: thing
 xattr: 1
 total xattrs: 3

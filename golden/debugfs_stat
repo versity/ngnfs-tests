@@ -1,5 +1,7 @@
 == making a file system and stat-ing root inode with debugfs
-<1> $ <1> $ ino: [REDACTED]
+<1> $ 
+<1> $ 
+ino: [REDACTED]
 gen: 1
 nlink: 2
 mode: 40755
