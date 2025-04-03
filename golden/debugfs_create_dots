@@ -5,9 +5,9 @@ create error: Is a directory (errno 21)
 <1> $ 
 create error: Is a directory (errno 21)
 <1> $ 
-mkdir: file exists
+mkdir error: File exists (errno 17)
 <1> $ 
-mkdir: file exists
+mkdir error: File exists (errno 17)
 <1> $ 
 ino: [REDACTED]
 gen: 1

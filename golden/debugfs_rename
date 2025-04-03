@@ -21,7 +21,7 @@ crtime: [REDACTED]
 size: 0
 <3> $ 
 <3> $ 
-stat: file does not exist
+stat error: No such file or directory (errno 2)
 <3> $ 
 <1> $ 
 ino: [REDACTED]

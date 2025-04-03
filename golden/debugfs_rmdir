@@ -15,5 +15,5 @@ crtime: [REDACTED]
 size: 5
 <1> $ 
 <1> $ 
-stat: dir does not exist
+stat error: No such file or directory (errno 2)
 <1> $ 

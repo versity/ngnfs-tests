@@ -1,7 +1,7 @@
 == looking up files and directories with debugfs
 <1> $ 
 <1> $ 
-lookup: file does not exist
+lookup error: No such file or directory (errno 2)
 <1> $ 
 <1> $ 
 name: file
