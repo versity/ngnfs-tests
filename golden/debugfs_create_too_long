@@ -1,0 +1,7 @@
+== creating a file with too long name with debugfs
+<1> $ 
+<1> $ 
+create error: File name too long (errno 36)
+<1> $ 
+stat error: File name too long (errno 36)
+<1> $ 

@@ -1,0 +1,5 @@
+== looking up a directory entry with too long name with debugfs
+<1> $ 
+<1> $ 
+lookup error: File name too long (errno 36)
+<1> $ 
