@@ -4,8 +4,8 @@
 <1> $ 
 <1> $ 
 <1> $ 
-xattr: name
-xattr: thing
-xattr: 1
+name
+thing
+1
 total xattrs: 3
 <1> $ 
