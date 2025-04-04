@@ -6,6 +6,7 @@ unlink error: No such file or directory (errno 2)
 <1> $ 
 ino: [REDACTED]
 gen: 1
+size: 0
 nlink: 1
 mode: 100644
 parent ino: [REDACTED]
@@ -14,7 +15,6 @@ atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]
 crtime: [REDACTED]
-size: 0
 <1> $ 
 <1> $ 
 stat error: No such file or directory (errno 2)

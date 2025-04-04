@@ -11,6 +11,7 @@ mkdir error: File exists (errno 17)
 <1> $ 
 ino: [REDACTED]
 gen: 1
+size: 5
 nlink: 2
 mode: 40755
 parent ino: [REDACTED]
@@ -19,10 +20,10 @@ atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]
 crtime: [REDACTED]
-size: 5
 <1> $ 
 ino: [REDACTED]
 gen: 1
+size: 5
 nlink: 2
 mode: 40755
 parent ino: [REDACTED]
@@ -31,5 +32,4 @@ atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]
 crtime: [REDACTED]
-size: 5
 <1> $ 

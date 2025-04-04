@@ -13,6 +13,7 @@ stat error: No such file or directory (errno 2)
 <1> $ 
 ino: [REDACTED]
 gen: 1
+size: 10
 nlink: 2
 mode: 40755
 parent ino: [REDACTED]
@@ -21,5 +22,4 @@ atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]
 crtime: [REDACTED]
-size: 10
 <1> $ 
