@@ -4,3 +4,15 @@
 <1> $ 
 read: EOF
 <1> $ 
+ino: [REDACTED]
+gen: 1
+size: 0
+nlink: 1
+mode: 100644
+parent ino: [REDACTED]
+parent gen: 0
+atime: [REDACTED]
+ctime: [REDACTED]
+mtime: [REDACTED]
+crtime: [REDACTED]
+<1> $ 
