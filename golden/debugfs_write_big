@@ -1,0 +1,20 @@
+== writing a lot of data with debugfs
+<1> $ 
+<1> $ 
+<1> $ 
+wrote 1000000 bytes
+<1> $ 
+read 1000000 bytes (0 zero bytes 0 poisoned bytes 0 garbage bytes)
+<1> $ 
+ino: [REDACTED]
+gen: 1
+size: 1000000
+nlink: 1
+mode: 100644
+parent ino: [REDACTED]
+parent gen: 0
+atime: [REDACTED]
+ctime: [REDACTED]
+mtime: [REDACTED]
+crtime: [REDACTED]
+<1> $ 
