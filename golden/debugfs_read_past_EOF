@@ -2,8 +2,11 @@
 <1> $ 
 <1> $ 
 <1> $ 
+wrote 10 bytes
 <1> $ 
 read: EOF
+short read: 0 bytes of 10 requested
+read 0 bytes (0 zero bytes 0 poisoned bytes 0 garbage bytes)
 <1> $ 
 ino: [REDACTED]
 gen: 1
