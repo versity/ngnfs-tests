@@ -1,13 +1,13 @@
 == renaming a file with debugfs
-<1> $ 
-<1> $ 
+<1> $ mkfs
+<1> $ rename file
 rename error: No such file or directory (errno 2)
-<1> $ 
-<1> $ 
-<3> $ 
+<1> $ mkdir dir
+<1> $ cd dir
+<3> $ rename file
 rename error: No such file or directory (errno 2)
-<3> $ 
-<3> $ 
+<3> $ create file
+<3> $ stat file
 ino: [REDACTED]
 gen: 1
 size: 0
@@ -19,11 +19,11 @@ atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]
 crtime: [REDACTED]
-<3> $ 
-<3> $ 
+<3> $ rename file
+<3> $ stat file
 stat error: No such file or directory (errno 2)
-<3> $ 
-<1> $ 
+<3> $ cd ..
+<1> $ stat file
 ino: [REDACTED]
 gen: 1
 size: 0
@@ -35,4 +35,4 @@ atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]
 crtime: [REDACTED]
-<1> $ 
+<1> $ quit

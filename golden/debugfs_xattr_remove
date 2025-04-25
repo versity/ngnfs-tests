@@ -1,9 +1,9 @@
 == removing an xattr with debugfs
-<1> $ 
-<1> $ 
-<1> $ 
+<1> $ mkfs
+<1> $ setxattr . name value
+<1> $ getxattr . name
 value
-<1> $ 
-<1> $ 
+<1> $ removexattr . name
+<1> $ getxattr . name
 getxattr error: No data available (errno 61)
-<1> $ 
+<1> $ quit

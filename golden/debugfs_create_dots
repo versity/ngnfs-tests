@@ -1,14 +1,14 @@
 == attempting to create/mkdir . and ..
-<1> $ 
-<1> $ 
+<1> $ mkfs
+<1> $ create .
 create error: Is a directory (errno 21)
-<1> $ 
+<1> $ create ..
 create error: Is a directory (errno 21)
-<1> $ 
+<1> $ mkdir .
 mkdir error: File exists (errno 17)
-<1> $ 
+<1> $ mkdir ..
 mkdir error: File exists (errno 17)
-<1> $ 
+<1> $ stat .
 ino: [REDACTED]
 gen: 1
 size: 5
@@ -20,7 +20,7 @@ atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]
 crtime: [REDACTED]
-<1> $ 
+<1> $ stat ..
 ino: [REDACTED]
 gen: 1
 size: 5
@@ -32,4 +32,4 @@ atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]
 crtime: [REDACTED]
-<1> $ 
+<1> $ quit

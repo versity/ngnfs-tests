@@ -1,9 +1,9 @@
 == creating and unlinking a file with debugfs
-<1> $ 
-<1> $ 
+<1> $ mkfs
+<1> $ unlink file
 unlink error: No such file or directory (errno 2)
-<1> $ 
-<1> $ 
+<1> $ create file
+<1> $ stat file
 ino: [REDACTED]
 gen: 1
 size: 0
@@ -15,7 +15,7 @@ atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]
 crtime: [REDACTED]
-<1> $ 
-<1> $ 
+<1> $ unlink file
+<1> $ stat file
 stat error: No such file or directory (errno 2)
-<1> $ 
+<1> $ quit

@@ -1,5 +1,5 @@
 == listing a nonexistent xattr with debugfs
-<1> $ 
-<1> $ 
+<1> $ mkfs
+<1> $ listxattr .
 total xattrs: 0
-<1> $ 
+<1> $ quit

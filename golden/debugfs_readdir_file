@@ -1,10 +1,10 @@
 == reading directory with debugfs
+<1> $ mkfs
+<1> $ create file
 <1> $ 
-<1> $ 
-<1> $ 
-no command<1> $ 
+no command<1> $ readdir
 00000000000000000000          1     1 00004 .
 00000000000000000001          1     1 00004 ..
 09045689629249748760          3     1 00010 file
 total 3
-<1> $ 
+<1> $ quit

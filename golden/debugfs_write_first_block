@@ -1,11 +1,11 @@
 == writing to the first block of a file with debugfs
-<1> $ 
-<1> $ 
-<1> $ 
+<1> $ mkfs
+<1> $ create file
+<1> $ write file 0 10
 wrote 10 bytes
-<1> $ 
+<1> $ read file 0 10
 read 10 bytes (0 zero bytes 0 poisoned bytes 0 garbage bytes)
-<1> $ 
+<1> $ stat file
 ino: [REDACTED]
 gen: 1
 size: 10
@@ -17,4 +17,4 @@ atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]
 crtime: [REDACTED]
-<1> $ 
+<1> $ quit

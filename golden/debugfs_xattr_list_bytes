@@ -1,8 +1,8 @@
 == getting bytes needed to list xattrs with debugfs
-<1> $ 
-<1> $ 
-<1> $ 
-<1> $ 
-<1> $ 
+<1> $ mkfs
+<1> $ setxattr . name value
+<1> $ setxattr . 1 1
+<1> $ setxattr . thing stuff
+<1> $ listxattr . 0
 bytes needed to list xattrs: 13
-<1> $ 
+<1> $ quit

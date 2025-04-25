@@ -1,7 +1,7 @@
 == reading directory with debugfs
-<1> $ 
-<1> $ 
+<1> $ mkfs
+<1> $ readdir
 00000000000000000000          1     1 00004 .
 00000000000000000001          1     1 00004 ..
 total 2
-<1> $ 
+<1> $ quit

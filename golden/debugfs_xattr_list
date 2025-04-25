@@ -1,11 +1,11 @@
 == listing xattrs with debugfs
-<1> $ 
-<1> $ 
-<1> $ 
-<1> $ 
-<1> $ 
+<1> $ mkfs
+<1> $ setxattr . name value
+<1> $ setxattr . 1 1
+<1> $ setxattr . thing stuff
+<1> $ listxattr .
 name
 1
 thing
 total xattrs: 3
-<1> $ 
+<1> $ quit

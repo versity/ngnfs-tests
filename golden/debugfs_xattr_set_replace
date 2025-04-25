@@ -1,13 +1,13 @@
 == setting an xattr with replace flag with debugfs
-<1> $ 
-<1> $ 
+<1> $ mkfs
+<1> $ setxattr . name value replace
 setxattr error: No data available (errno 61)
-<1> $ 
+<1> $ getxattr . name
 getxattr error: No data available (errno 61)
-<1> $ 
-<1> $ 
+<1> $ setxattr . name value create
+<1> $ getxattr . name
 value
-<1> $ 
-<1> $ 
+<1> $ setxattr . name value2 replace
+<1> $ getxattr . name
 value2
-<1> $ 
+<1> $ quit

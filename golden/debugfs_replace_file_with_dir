@@ -1,14 +1,14 @@
 == renaming a directory over a file with debugfs
-<1> $ 
-<1> $ 
-<1> $ 
-<1> $ 
-<5> $ 
-<5> $ 
-<5> $ 
+<1> $ mkfs
+<1> $ create target
+<1> $ mkdir dir
+<1> $ cd dir
+<5> $ mkdir target
+<5> $ rename target
+<5> $ stat target
 stat error: No such file or directory (errno 2)
-<5> $ 
-<1> $ 
+<5> $ cd ..
+<1> $ stat target
 ino: [REDACTED]
 gen: 1
 size: 5
@@ -20,4 +20,4 @@ atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]
 crtime: [REDACTED]
-<1> $ 
+<1> $ quit

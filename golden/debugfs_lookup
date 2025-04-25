@@ -1,19 +1,19 @@
 == looking up files and directories with debugfs
-<1> $ 
-<1> $ 
+<1> $ mkfs
+<1> $ lookup file
 lookup error: No such file or directory (errno 2)
-<1> $ 
-<1> $ 
+<1> $ create file
+<1> $ lookup file
 name: file
 name_len: 4
 dtype: 10
 ino: [REDACTED]
 gen: 1
-<1> $ 
-<1> $ 
+<1> $ mkdir dir
+<1> $ lookup dir
 name: dir
 name_len: 3
 dtype: 4
 ino: [REDACTED]
 gen: 1
-<1> $ 
+<1> $ quit

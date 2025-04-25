@@ -1,12 +1,12 @@
 == renaming a file over a directory with debugfs
-<1> $ 
-<1> $ 
-<1> $ 
-<1> $ 
-<3> $ 
-<3> $ 
+<1> $ mkfs
+<1> $ mkdir dir
+<1> $ mkdir target
+<1> $ cd dir
+<3> $ create target
+<3> $ rename target
 rename error: File exists (errno 17)
-<3> $ 
+<3> $ stat target
 ino: [REDACTED]
 gen: 1
 size: 0
@@ -18,8 +18,8 @@ atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]
 crtime: [REDACTED]
-<3> $ 
-<1> $ 
+<3> $ cd ..
+<1> $ stat target
 ino: [REDACTED]
 gen: 1
 size: 5
@@ -31,4 +31,4 @@ atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]
 crtime: [REDACTED]
-<1> $ 
+<1> $ quit
