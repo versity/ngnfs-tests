@@ -10,4 +10,7 @@ value
 <1> $ setxattr . name value2 replace
 <1> $ getxattr . name
 value2
+<1> $ listxattr .
+name
+total xattrs: 1
 <1> $ quit

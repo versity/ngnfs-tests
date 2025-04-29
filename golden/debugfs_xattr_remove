@@ -6,4 +6,6 @@ value
 <1> $ removexattr . name
 <1> $ getxattr . name
 getxattr error: No data available (errno 61)
+<1> $ listxattr .
+total xattrs: 0
 <1> $ quit
