@@ -20,4 +20,5 @@ atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]
 crtime: [REDACTED]
-<1> $ quit
+<1> $ cd target
+<6> $ quit
