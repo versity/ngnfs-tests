@@ -5,10 +5,8 @@
 <1> $ cd dir
 <5> $ mkdir target
 <5> $ rename target
+rename error: Not a directory (errno 20)
 <5> $ stat target
-stat error: No such file or directory (errno 2)
-<5> $ cd ..
-<1> $ stat target
 ino: [REDACTED]
 gen: 1
 size: 5
@@ -20,4 +18,18 @@ atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]
 crtime: [REDACTED]
-<1> $ quit
+<5> $ cd ..
+<1> $ stat target
+ino: [REDACTED]
+gen: 1
+size: 0
+nlink: 1
+mode: 100644
+parent ino: [REDACTED]
+parent gen: 0
+atime: [REDACTED]
+ctime: [REDACTED]
+mtime: [REDACTED]
+crtime: [REDACTED]
+<1> $ cd target
+cd: not a directory: target<1> $ quit

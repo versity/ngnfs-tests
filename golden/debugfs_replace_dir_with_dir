@@ -4,6 +4,9 @@
 <1> $ mkdir dir2
 <1> $ cd dir
 <3> $ mkdir dir2
+<3> $ cd dir2
+<6> $ create file
+<6> $ cd ..
 <3> $ rename dir2
 <3> $ stat dir2
 stat error: No such file or directory (errno 2)
@@ -11,7 +14,7 @@ stat error: No such file or directory (errno 2)
 <1> $ stat dir2
 ino: [REDACTED]
 gen: 1
-size: 5
+size: 10
 nlink: 2
 mode: 40755
 parent ino: [REDACTED]
@@ -20,4 +23,17 @@ atime: [REDACTED]
 ctime: [REDACTED]
 mtime: [REDACTED]
 crtime: [REDACTED]
-<1> $ quit
+<1> $ cd dir2
+<6> $ stat file
+ino: [REDACTED]
+gen: 1
+size: 0
+nlink: 1
+mode: 100644
+parent ino: [REDACTED]
+parent gen: 0
+atime: [REDACTED]
+ctime: [REDACTED]
+mtime: [REDACTED]
+crtime: [REDACTED]
+<6> $ quit
