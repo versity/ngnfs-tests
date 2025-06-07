@@ -1,0 +1,9 @@
+== creating a file with debugfs and getting the directory btree info
+<[REDACTED]> $ mkfs
+<[REDACTED]> $ create file
+<[REDACTED]> $ btree_info .
+dirent btree bnr: [REDACTED]
+dirent btree height: [REDACTED]
+xattr btree bnr: [REDACTED]
+xattr btree height: [REDACTED]
+<[REDACTED]> $ quit

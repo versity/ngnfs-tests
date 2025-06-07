@@ -1,0 +1,23 @@
+== creating a file with debugfs and printing the directory btree
+<[REDACTED]> $ mkfs
+<[REDACTED]> $ create file
+<[REDACTED]> $ btree_info .
+dirent btree bnr: [REDACTED]
+dirent btree height: [REDACTED]
+xattr btree bnr: [REDACTED]
+xattr btree height: [REDACTED]
+<[REDACTED]> $ 
+debugfs: verifying btree block
+
+bnr:		[REDACTED]
+level:		[REDACTED]
+nr_items:	[REDACTED]
+tail free:	[REDACTED]
+total free:	[REDACTED]
+bt->first:	[[REDACTED] [REDACTED] [REDACTED]]
+bt->last:	[[REDACTED] [REDACTED] [REDACTED]]
+
+ihdrs[  [REDACTED]]: key	[[REDACTED] [REDACTED] [REDACTED]] off  [REDACTED] size   [REDACTED]
+
+btree_pb [REDACTED]
+<[REDACTED]> $ quit

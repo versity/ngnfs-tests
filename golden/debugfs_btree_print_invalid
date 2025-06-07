@@ -1,0 +1,36 @@
+== printing an invalid btree block
+<[REDACTED]> $ mkfs
+<[REDACTED]> $ 
+no command<[REDACTED]> $ 
+debugfs: verifying btree block
+
+bnr:		[REDACTED]
+level:		[REDACTED]
+nr_items:	[REDACTED]
+tail free:	[REDACTED]
+total free:	[REDACTED]
+bt->first:	[[REDACTED] [REDACTED] [REDACTED]]
+bt->last:	[[REDACTED] [REDACTED] [REDACTED]]
+
+ERROR: ihdrs[  [REDACTED]]: free ihdr not zeroed: off [REDACTED] val_size [REDACTED]
+ERROR: ihdrs[  [REDACTED]]: free ihdr not zeroed: off [REDACTED] val_size [REDACTED]
+ERROR: ihdrs[  [REDACTED]]: free ihdr not zeroed: off [REDACTED] val_size [REDACTED]
+ERROR: ihdrs[  [REDACTED]]: free ihdr not zeroed: off [REDACTED] val_size [REDACTED]
+ERROR: ihdrs[  [REDACTED]]: free ihdr not zeroed: off [REDACTED] val_size [REDACTED]
+ERROR: ihdrs[ [REDACTED]]: free ihdr not zeroed: off [REDACTED] val_size [REDACTED]
+ERROR: ihdrs[ [REDACTED]]: free ihdr not zeroed: off [REDACTED] val_size [REDACTED]
+ERROR: ihdrs[ [REDACTED]]: free ihdr not zeroed: off [REDACTED] val_size [REDACTED]
+ERROR: ihdrs[ [REDACTED]]: free ihdr not zeroed: off [REDACTED] val_size [REDACTED]
+
+	   [REDACTED] items in use in block header
+	   [REDACTED] initialized items
+	   [REDACTED] unzeroed items
+	   [REDACTED] uninitialized items
+	   [REDACTED] items with bad offset
+	   [REDACTED] too big items
+	   [REDACTED] out of range items
+	   [REDACTED] out of order items
+	ERROR: btree block debugfs bnr [REDACTED] failed verification
+
+btree_pb [REDACTED]
+<[REDACTED]> $ quit
