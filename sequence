@@ -54,4 +54,6 @@ debugfs_write_decreasing.sh
 debugfs_write_mixed.sh
 debugfs_write_block_boundary_3.sh
 debugfs_write_big.sh
-
+debugfs_btree_info.sh
+debugfs_btree_print_block.sh
+debugfs_btree_print_invalid.sh
