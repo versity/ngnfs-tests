@@ -5,7 +5,7 @@
 <1> $ cd dir
 <3> $ create target
 <3> $ rename target
-rename error: File exists (errno 17)
+rename error: Is a directory (errno 21)
 <3> $ stat target
 ino: [REDACTED]
 gen: 1
