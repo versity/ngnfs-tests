@@ -333,6 +333,7 @@ start_devd() {
 	port="$T_DEVD_PORT"
 	for d in "${T_DEVICES[@]}"; do
 		addr="$T_DEVD_HOST:$port"
+		cmd ngnfs-cli format-device "$d"
 		cmd ngnfs-devd -d "$d" -l "$addr" -t "$T_RESULTS/devd/trace-$port" &
 		T_DEVD_ADDRS="$T_DEVD_ADDRS -d $addr"
 		((port++))
